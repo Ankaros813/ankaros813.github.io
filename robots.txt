@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ankaros813.github.io/sitemap.xml
+Sitemap: https://Ankaros813.github.io/sitemap.xml
