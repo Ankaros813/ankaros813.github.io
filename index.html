@@ -152,7 +152,7 @@ into the {body} of the default.hbs template -->
             
         </div>
         
-            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+            <a class="subscribe-button" href="#subscribe">Search</a>
         
     </div>
 </nav>
@@ -389,18 +389,29 @@ into the {body} of the default.hbs template -->
             <a class="subscribe-overlay-close" href="#"></a>
             <div class="subscribe-overlay-content">
                 
-                <h1 class="subscribe-overlay-title">Subscribe to Wooseok Jeong - Portfolio</h1>
-                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
-                <form method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+                <h1 class="subscribe-overlay-title">Search Wooseok Jeong - Portfolio</h1>
+                <p class="subscribe-overlay-description">
+                lunr.js를 이용한 posts 검색 </p>
+                <span id="searchform" class="">
+    <input type="hidden" name="confirm" class="confirm" />
+    <input type="hidden" name="location" class="location" />
+    <input type="hidden" name="referrer" class="referrer" />
 
     <div class="form-group">
-        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+        <input class="subscribe-email" onkeyup="myFunc(event)" 
+               id="searchtext" type="text" name="searchtext"  
+               placeholder="Search..." />
     </div>
-    <button class="" type="submit" disabled><span>Subscribe</span></button>
-    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
-</form>
 
+    <script type="text/javascript">
+        function myFunc(event) {
+            if (event.keyCode === 13) {
+                var searchInput = document.getElementById("searchtext").value;
+                window.location.href = "/search.html?query=" + encodeURIComponent(searchInput);
+            }
+        }
+    </script>
+</span>
             </div>
         </div>
     
