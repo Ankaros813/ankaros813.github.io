@@ -4,11 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://ankaros813.github.io/tag/python/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://ankaros813.github.io/" rel="alternate" type="text/html" />
-<<<<<<< HEAD
-  <updated>2025-10-04T04:24:11+09:00</updated>
-=======
-  <updated>2025-10-03T17:47:05+00:00</updated>
->>>>>>> origin/main
+  <updated>2025-10-03T19:32:17+00:00</updated>
   <id>https://ankaros813.github.io/tag/python/feed.xml</id>
 
   
@@ -242,11 +238,7 @@ exclude:
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;이 글은 python basic에 대하여 정우석이 쓴 글이다. 완벽할 것이다.&lt;/p&gt;
-=======
-&lt;p&gt;이 글은 python basic에 대하여 정우석이 쓴 글이다. 완벽&lt;/p&gt;
->>>>>>> origin/main
+&lt;p&gt;이 글은 python basic에 대하여 정우석이 쓴 글이다.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;정우석이다&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
