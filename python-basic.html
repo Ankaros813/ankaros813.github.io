@@ -254,21 +254,44 @@ into the {body} of the default.hbs template -->
     <input type="hidden" name="location" class="location" />
     <input type="hidden" name="referrer" class="referrer" />
 
-    <div class="form-group">
-        <input class="subscribe-email" onkeyup="myFunc(event)" 
-               id="searchtext" type="text" name="searchtext"  
-               placeholder="Search..." />
+    <div class="form-group" style="display: flex; width: 100%;">
+        <!-- 검색 input -->
+        <input class="subscribe-email" 
+            onkeyup="myFunc(event)" 
+            id="searchtext" 
+            type="text" 
+            name="searchtext"  
+            placeholder="Search..." 
+            style="flex: 1; padding: 10px; font-size: 1.6rem;" />
+
+        <!-- 돋보기 버튼 -->
+        <button type="button" 
+                onclick="searchClick()" 
+                style="background-color: #000; color: #fff; border: none; padding: 0 20px; font-size: 1.6rem; cursor: pointer; min-width: 50px;">
+            <i class="fa fa-search"></i>
+        </button>
     </div>
 
     <script type="text/javascript">
         function myFunc(event) {
             if (event.keyCode === 13) {
-                var searchInput = document.getElementById("searchtext").value;
+                doSearch();
+            }
+        }
+
+        function searchClick() {
+            doSearch();
+        }
+
+        function doSearch() {
+            var searchInput = document.getElementById("searchtext").value;
+            if(searchInput.trim() !== "") {
                 window.location.href = "/search.html?query=" + encodeURIComponent(searchInput);
             }
         }
     </script>
 </span>
+
                 </section>
             
             -->
@@ -562,29 +585,52 @@ into the {body} of the default.hbs template -->
             <a class="subscribe-overlay-close" href="#"></a>
             <div class="subscribe-overlay-content">
                 
-                <h1 class="subscribe-overlay-title">Search Wooseok Jeong  Portfolio</h1>
+                <h1 class="subscribe-overlay-title">검색창</h1>
                 <p class="subscribe-overlay-description">
-                lunr.js를 이용한 posts 검색 </p>
+                관련 검색어를 통해 더 빠르게 찾아보세요! </p>
                 <span id="searchform" class="">
     <input type="hidden" name="confirm" class="confirm" />
     <input type="hidden" name="location" class="location" />
     <input type="hidden" name="referrer" class="referrer" />
 
-    <div class="form-group">
-        <input class="subscribe-email" onkeyup="myFunc(event)" 
-               id="searchtext" type="text" name="searchtext"  
-               placeholder="Search..." />
+    <div class="form-group" style="display: flex; width: 100%;">
+        <!-- 검색 input -->
+        <input class="subscribe-email" 
+            onkeyup="myFunc(event)" 
+            id="searchtext" 
+            type="text" 
+            name="searchtext"  
+            placeholder="Search..." 
+            style="flex: 1; padding: 10px; font-size: 1.6rem;" />
+
+        <!-- 돋보기 버튼 -->
+        <button type="button" 
+                onclick="searchClick()" 
+                style="background-color: #000; color: #fff; border: none; padding: 0 20px; font-size: 1.6rem; cursor: pointer; min-width: 50px;">
+            <i class="fa fa-search"></i>
+        </button>
     </div>
 
     <script type="text/javascript">
         function myFunc(event) {
             if (event.keyCode === 13) {
-                var searchInput = document.getElementById("searchtext").value;
+                doSearch();
+            }
+        }
+
+        function searchClick() {
+            doSearch();
+        }
+
+        function doSearch() {
+            var searchInput = document.getElementById("searchtext").value;
+            if(searchInput.trim() !== "") {
                 window.location.href = "/search.html?query=" + encodeURIComponent(searchInput);
             }
         }
     </script>
 </span>
+
             </div>
         </div>
     
